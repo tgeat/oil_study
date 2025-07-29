@@ -20,9 +20,11 @@ a.偏微分方程本身
 
 b.初始条件
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 c.边界条件
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -32,5 +34,12 @@ e.其他确定的物理性质的参数的值
 
 f.离散偏微分方程的离散方法
 
+对于边界条件来说，分别有三种边界条件：
 
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+综上最终可以得到，dirichlet边界条件就是控制了空间边界上的物理值。
+
+在渗流过程中，控制含水饱和度和聚合物浓度为固定的物理值的实际意义就是，在边界源源不断的注入对应的含有聚合物的水来进行驱油。
