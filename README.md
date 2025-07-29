@@ -76,3 +76,4 @@ f.离散偏微分方程的离散方法
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+散度定理就是一个区域产生或消失了多少的流体，就等于此区域的边界即表面一共流出流入多少。
