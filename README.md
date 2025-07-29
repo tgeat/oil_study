@@ -20,13 +20,13 @@ a.偏微分方程本身
 
 b.初始条件
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 c.边界条件
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 d.求解域和时间范围
 
@@ -36,10 +36,43 @@ f.离散偏微分方程的离散方法
 
 对于边界条件来说，分别有三种边界条件：
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 综上最终可以得到，dirichlet边界条件就是控制了空间边界上的物理值。
 
 在渗流过程中，控制含水饱和度和聚合物浓度为固定的物理值的实际意义就是，在边界源源不断的注入对应的含有聚合物的水来进行驱油。
+
+3. 守恒方程的构建
+
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+其中源汇项q，正负及其实际物理意义为：
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+此时当前点的流入流出和注入采出可以实现平衡。
+
+4. 获取所有的物质守恒方程（构建要求解物理量的偏微分方程）：
+
+水相的物质守恒方程；油相的物质守恒方程；总的物质守恒方程；聚合物的物质守恒方程。
+
+5. 将总的物质守恒离散化求解偏微分方程：
+
+5.1 将物质守恒方程积分
+
+5.2 积分以后对达西速度的散度的积分应用散度定理：
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+积分完以后，并且应用完散度定理后：
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
