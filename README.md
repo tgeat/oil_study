@@ -66,6 +66,8 @@ f.离散偏微分方程的离散方法
 
 5.1 将物质守恒方程积分
 
+ps：积分完以后，接下来不同的处理方法就对应不同的pde离散方法，下面的将达西速度应用散度定理就是mfd算法，而无网格算法是将达西速度散度的积分通过泰勒展开并用最小二乘法取误差最小的时候估计出来。
+
 5.2 积分以后对达西速度的散度的积分应用散度定理：
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
@@ -77,3 +79,35 @@ f.离散偏微分方程的离散方法
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 散度定理就是一个区域产生或消失了多少的流体，就等于此区域的边界即表面一共流出流入多少。
+
+6. 正交网格与非正交网格：
+
+<figure><img src=".gitbook/assets/QQ_1753779989446.png" alt=""><figcaption></figcaption></figure>
+
+正交网格的定义是：对于任意两个相邻单元，其单元中心的连线方向与它们共享边界面的法向量方向一致（或共线）时，称这对单元之间是正交的。若整个网格系统都满足此条件，则称该网格是正交网格。
+
+7. 通过临界网格表示达西速度的散度的积分
+
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+下式为水相和油相的总和达西速度的散度（实际物理意义就是液体流动的在各个方向的总和）
+
+<figure><img src=".gitbook/assets/QQ_1753781788925.png" alt=""><figcaption></figcaption></figure>
+
+下式为积分后并应用散度定理，将▽算子转化为面通量。
+
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+然后进一步转化为空间内每个网格的每个边的通量和：
+
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+然后提取其中的每个网格的每个边的通量，做新的定义：
+
+<figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+然后通过一个算法将其转化为（文献里面的算法）：
+
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
