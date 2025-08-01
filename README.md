@@ -20,11 +20,11 @@ a.偏微分方程本身
 
 b.初始条件
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 c.边界条件
 
-<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
@@ -36,9 +36,9 @@ f.离散偏微分方程的离散方法
 
 对于边界条件来说，分别有三种边界条件：
 
-<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 综上最终可以得到，dirichlet边界条件就是控制了空间边界上的物理值。
 
@@ -70,13 +70,13 @@ ps：积分完以后，接下来不同的处理方法就对应不同的pde离散
 
 5.2 积分以后对达西速度的散度的积分应用散度定理：
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 积分完以后，并且应用完散度定理后：
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 散度定理就是一个区域产生或消失了多少的流体，就等于此区域的边界即表面一共流出流入多少。
 
@@ -124,19 +124,19 @@ ps：积分完以后，接下来不同的处理方法就对应不同的pde离散
 
 <figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 补充：第一项和第二项的实际意义
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 带回原有应用完散度定理的达西速度散度的积分的公式：
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 最后将其代入最初的总物质守恒方程：
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 此外，在单元之间的公共边界上，必须满足通量连续性条件。这个条件要求通过这条公共边的通量代数和必须为零。
 
@@ -157,4 +157,30 @@ ps：积分完以后，接下来不同的处理方法就对应不同的pde离散
 9. 迎风处理的定义：
 
 <figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
+10. 含水饱和度的求法
+
+10.1 含水饱和度是什么
+
+含水饱和度是一个会随着时间和空间变化的非连续的物理量。
+
+对于这种物理量，需要找到一个含有这个变量的偏微分方程，并通过划分网格和时间步，离散化这个偏微分方程并给出最终的唯一解。
+
+故此问题转变为，解偏微分方程问题，下一步就是去找要解的偏微分方程是什么。
+
+10.2 水相守恒方程
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+此方程就是上文所说的，需要解的偏微分方程，且其中具有含水饱和度这一物理量。
+
+10.3 用DG算法解偏微分方程
+
+表示解与试验函数：
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+弱形式 & 局部积分：
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
