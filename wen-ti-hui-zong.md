@@ -1,6 +1,6 @@
 # 问题汇总
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 1.这个水相粘度公式的参数是从哪得到的。
 

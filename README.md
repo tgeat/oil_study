@@ -20,7 +20,7 @@ a.偏微分方程本身
 
 b.初始条件
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 c.边界条件
 
@@ -38,7 +38,7 @@ f.离散偏微分方程的离散方法
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 综上最终可以得到，dirichlet边界条件就是控制了空间边界上的物理值。
 
@@ -70,7 +70,7 @@ ps：积分完以后，接下来不同的处理方法就对应不同的pde离散
 
 5.2 积分以后对达西速度的散度的积分应用散度定理：
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -124,7 +124,7 @@ ps：积分完以后，接下来不同的处理方法就对应不同的pde离散
 
 <figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 补充：第一项和第二项的实际意义
 
@@ -178,7 +178,7 @@ ps：积分完以后，接下来不同的处理方法就对应不同的pde离散
 
 表示解与试验函数：
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 弱形式 & 局部积分：
 
